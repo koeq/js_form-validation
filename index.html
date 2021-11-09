@@ -8,13 +8,19 @@
     <title>form-validation</title>
   </head>
   <body>
-    <form action="" method="POST">
-      <label for="email">email</label>
-      <input type="email" name="email" id="email" required />
-      <label for="password">password</label>
-      <input type="password" />
+    <form id="email-form" action="" method="GET">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email"
+        required
+      />
+
+      <input type="password" id="password" placeholder="password" />
       <button type="submit">submit</button>
     </form>
+    <div id="error"></div>
 
     <script src="./index.js"></script>
   </body>
